@@ -1,0 +1,16 @@
+#logo{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#logo img{
+    width: 35%;
+    height: 35%;
+
+    border-radius: 1rem;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

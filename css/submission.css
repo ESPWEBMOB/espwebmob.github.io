@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 15px "Ubuntu", Arial, sans-seriff;
+    background-color: #fff;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 16px;
+}
+
+#container #dates, #topics, #guidelines, #review{
+    margin-top: 2rem;
+    border: 2px solid rgb(207, 202, 202);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    line-height: 3rem;
+}
+
+#dates h1{
+    line-height: 3rem;
+}

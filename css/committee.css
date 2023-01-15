@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 15px "Ubuntu", Arial, sans-seriff;
+    background-color: #fff;
+}
+
+#container{
+    position: relative;
+    width: 45%;
+
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+#container p{
+    display: flex;
+    align-items: center;
+}
+
+#container img{
+    width: 4rem;
+    height: 4rem;
+
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 1.5rem;
+}
+
+#container #organizers ,#prog-comit, #publicity{
+    margin-top: 2rem;
+    border: 2px solid rgb(207, 202, 202);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    line-height: 3rem;
+}
+
