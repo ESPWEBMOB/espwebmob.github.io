@@ -49,15 +49,18 @@
 
 
 <script>
+    //captura variaveis passadas via metodo get na url.
     var urlAtual = window.location.href;
     var urlClass = new URL(urlAtual);
     var page = urlClass.searchParams.get("p")+ ".html";
     
+    // a variavel p (?p=nome_da_pagina) representa a página que eu quero carregar. Se ela não estiver definida, carrega a inicio
     if(page == "null.html") page = "inicio.html";
     
     includeElement = document.getElementById("pageBody");
     includeElement.setAttribute('src', page);
 
+    //carrego as paginas no atributo src das tags smarty-include
     loadPage();
 
 </script>
