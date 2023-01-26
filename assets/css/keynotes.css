@@ -1,0 +1,20 @@
+#key1, #key2{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 4rem;
+
+    padding: 0 4.5rem;
+    border: 2px solid rgb(207, 202, 202);
+    border-radius: 5px;
+}
+
+#text p{
+    margin-left: 4rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+#text h2, h3, h4, h5{
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
