@@ -1,5 +1,5 @@
 
-
+/*
 function loadPage(){
     let e=document.getElementsByTagName("smarty-include");
     for(var t=0; t<e.length; t++){
@@ -12,4 +12,13 @@ function loadPage(){
         fetch(e).then(e=>e.text()).then(e=>t(e))
     }
 }
+*/
 
+function loadPage(){ //com jQuery
+    let e=document.getElementsByTagName("smarty-include");
+    for(var t=0; t<e.length; t++){
+        let a=e[t];
+        link = e[t].attributes.src.value;
+        $(e[t]).load(link)
+    }
+}
