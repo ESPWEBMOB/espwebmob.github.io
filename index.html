@@ -41,6 +41,7 @@
 </header>
 <!-- -->
 
+
 <!-- CORPO DA PAGINA -->
 <section id="content" class="container">
     <br />
@@ -62,7 +63,11 @@
     var page = urlClass.searchParams.get("p")+ ".html";
     
     // a variavel p (?p=nome_da_pagina) representa a página que eu quero carregar. Se ela não estiver definida, carrega a inicio
-    if(page == "null.html") page = "inicio.html";
+    if(page == "null.html") {
+        page = "inicio.html";
+    }else{
+        $(".banner").hide();
+    }
     
     includeElement = document.getElementById("pageBody");
     includeElement.setAttribute('src', page);
