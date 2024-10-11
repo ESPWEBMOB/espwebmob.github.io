@@ -1,4 +1,73 @@
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Popup Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the popup image */
+        #popupImage {
+            position: fixed;
+            top: 40px;
+            right: 20px;
+            width: 400px; /* You can adjust the size */
+            height: auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensures the popup is above other content */
+        }
+
+        #popupImage img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Close button for the popup */
+        #closePopup {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 2px 5px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Show the popup image when the page loads
+            document.getElementById("popupImage").style.display = "block";
+        };
+
+        function closePopup() {
+            // Hide the popup image when close button is clicked
+            document.getElementById("popupImage").style.display = "none";
+        }
+    </script>
+    
+      
+
+</head>
+
+
+  <body>
+
+    <!-- Popup image container -->
+    <div id="popupImage" style="display: none;">
+        <button id="closePopup" onclick="closePopup()">X</button>
+        <a href="https://espwebmob.github.io/index.html?p=inscricoes" ><img src="./fotos/espwebmob-divulgação.png" ></a>
+    </div>
+
+
+    
+
 
 <div class="d-flex justify-content-center">
     <!-- text-justify, text-center, text-begin (a direita), text-end (a esquerda) -->
